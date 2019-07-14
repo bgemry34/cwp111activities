@@ -28,7 +28,7 @@ header nav{
     background-color: #212121;
     color: white;
     z-index: 1;
-    position: sticky;
+    position: fixed;
     border-bottom: #c0abab8e .5px solid;
 }
 
@@ -43,6 +43,7 @@ header::after{
     background-repeat: no-repeat;
     background-position: center;
     display: block;
+    border-bottom: #212121 solid 5px;
 }
 
 .nav-logo p{
@@ -50,6 +51,7 @@ header::after{
 }
 
 .nav-left{
+    font-size: 1rem;
     float: right;
 }
 .nav-left li{
@@ -58,20 +60,20 @@ header::after{
 }
 
 .nav-left li a{
+    letter-spacing: 0.05rem;
     text-decoration: none;
-    color:#f4f4f4;
+    color: #ffffff;
     padding-bottom: 5px;
 }
 
 .nav-left li a:hover{
-    border-bottom: #f4f4f4 1px solid;
-    
+    border-bottom: #f4f4f4 1px solid;    
 }
 
 .bg-content{
     position: absolute;
     width: 60%;
-    top: 7rem;
+    top: 3.5rem;
     left:30rem;
     z-index: 1;
     color: #f4f4f4;
@@ -100,4 +102,38 @@ header::after{
     background-color: white;
     height: 20px;
     width: 20%;
+}
+
+.about .header h3{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.about .header hr{
+    width: 30%;
+    height: 3px;
+    background-color: goldenrod;    
+}
+
+.grid-2{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+
+.grid-2 .about-image img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+}
+
+
+.grid-4{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+}
+
+.grid-4 div img{
+    width: 200px;
+    height:200px;
 }
