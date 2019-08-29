@@ -131,6 +131,14 @@ header::after{
 .grid-4{
     display:grid;
     grid-template-columns:repeat(4, 1fr);
+    grid-gap: 70px;
+    margin-left: 30px;
+    padding-top: 20px;
+}
+
+.grid-4 div p{
+    text-align: center;
+    font-weight: 600
 }
 
 .grid-4 div img{
